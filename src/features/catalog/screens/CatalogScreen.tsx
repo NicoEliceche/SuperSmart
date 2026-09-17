@@ -17,6 +17,7 @@ import {
   trustBadges,
 } from '../data/catalogData';
 import type { Product } from '../types/catalog.types';
+import { publicPath } from '../utils/publicPath';
 import { contact, createWhatsAppUrl } from '../utils/whatsapp';
 import {
   AdvantageCard,
@@ -89,9 +90,9 @@ export const CatalogScreen = () => {
 
             <HeroMedia>
               <picture>
-                <source srcSet="/assets/products/android-9-product-kit.webp" type="image/webp" />
+                <source srcSet={publicPath('assets/products/android-9-product-kit.webp')} type="image/webp" />
                 <HeroImage
-                  src="/assets/products/android-9-product-kit.jpg"
+                  src={publicPath('assets/products/android-9-product-kit.jpg')}
                   alt="Kit de reproductor Android Super Smart con cámara, cables y antena"
                   loading="eager"
                   fetchPriority="high"

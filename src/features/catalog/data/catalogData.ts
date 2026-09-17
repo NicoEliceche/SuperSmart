@@ -20,6 +20,7 @@ import type {
   Product,
   Review,
 } from '../types/catalog.types';
+import { publicPath } from '../utils/publicPath';
 
 export const navigationItems: NavigationItem[] = [
   { label: 'Inicio', href: '#inicio' },
@@ -118,8 +119,8 @@ export const products: Product[] = [
     description: 'Equipo 4+64 GB con CarPlay, Bluetooth, USB y cámara de retroceso para una experiencia multimedia completa.',
     badge: 'Más solicitado',
     image: {
-      webp: '/assets/products/android-9-2din.webp',
-      fallback: '/assets/products/android-9-2din.jpg',
+      webp: publicPath('assets/products/android-9-2din.webp'),
+      fallback: publicPath('assets/products/android-9-2din.jpg'),
       alt: 'Reproductor Android 9 pulgadas 2 DIN Super Smart con accesorios',
     },
     specs: ['4+64 GB', 'Android 15', 'CarPlay y Android Auto', 'Cámara de retroceso AHD'],
@@ -130,8 +131,8 @@ export const products: Product[] = [
     category: 'Audio convencional',
     description: 'Radio compacta compatible con Bluetooth, USB y memoria Micro SD, ideal para actualizaciones rápidas.',
     image: {
-      webp: '/assets/products/radio-1din.webp',
-      fallback: '/assets/products/radio-1din.jpg',
+      webp: publicPath('assets/products/radio-1din.webp'),
+      fallback: publicPath('assets/products/radio-1din.jpg'),
       alt: 'Reproductor sencillo 1 DIN con control remoto',
     },
     specs: ['Bluetooth', 'USB', 'Micro SD', 'Control estándar'],
@@ -143,8 +144,8 @@ export const products: Product[] = [
     description: 'Marco para Toyota 4Runner 2012-2024 con cablería y Canbus para instalación más limpia.',
     badge: 'Toyota',
     image: {
-      webp: '/assets/products/marco-toyota-4runner.webp',
-      fallback: '/assets/products/marco-toyota-4runner.jpg',
+      webp: publicPath('assets/products/marco-toyota-4runner.webp'),
+      fallback: publicPath('assets/products/marco-toyota-4runner.jpg'),
       alt: 'Marco integral para Toyota 4Runner 2012 a 2024',
     },
     specs: ['2012-2024', '9 pulgadas', 'Canbus incluido', 'Cablería incluida'],
@@ -155,8 +156,8 @@ export const products: Product[] = [
     category: 'Accesorios',
     description: 'Detalle exterior flexible para maletero, disponible en acabado negro mate y fibra de carbono.',
     image: {
-      webp: '/assets/products/spoiler-maletero.webp',
-      fallback: '/assets/products/spoiler-maletero.jpg',
+      webp: publicPath('assets/products/spoiler-maletero.webp'),
+      fallback: publicPath('assets/products/spoiler-maletero.jpg'),
       alt: 'Spoiler flexible de maletero en color negro',
     },
     specs: ['Negro mate', 'Fibra de carbono', '2.5 mts', 'Instalación adhesiva'],
@@ -167,8 +168,8 @@ export const products: Product[] = [
     category: 'Accesorios exteriores',
     description: 'Antena decorativa con acabados para mejorar la línea visual del vehículo.',
     image: {
-      webp: '/assets/products/aleta-tiburon.webp',
-      fallback: '/assets/products/aleta-tiburon.jpg',
+      webp: publicPath('assets/products/aleta-tiburon.webp'),
+      fallback: publicPath('assets/products/aleta-tiburon.jpg'),
       alt: 'Aletas de tiburón automotrices de varios colores',
     },
     specs: ['Negro mate', 'Negro brillante', 'Fibra de carbono', 'Función de radio'],
@@ -179,8 +180,8 @@ export const products: Product[] = [
     category: 'Iluminación',
     description: 'Set de luces ámbar para parrilla con presencia deportiva y mejor visibilidad frontal.',
     image: {
-      webp: '/assets/products/luces-parrilla-toyota.webp',
-      fallback: '/assets/products/luces-parrilla-toyota.jpg',
+      webp: publicPath('assets/products/luces-parrilla-toyota.webp'),
+      fallback: publicPath('assets/products/luces-parrilla-toyota.jpg'),
       alt: 'Luces de parrilla ámbar instaladas en camioneta Toyota',
     },
     specs: ['Ámbar', 'Parrilla frontal', 'Set de luces', 'Estilo deportivo'],
@@ -191,8 +192,8 @@ export const products: Product[] = [
     category: 'Seguridad',
     description: 'Opciones cuadradas, domo tipo Toyota y porta placas con cámara para asistencia al estacionar.',
     image: {
-      webp: '/assets/products/camara-retroceso.webp',
-      fallback: '/assets/products/camara-retroceso.jpg',
+      webp: publicPath('assets/products/camara-retroceso.webp'),
+      fallback: publicPath('assets/products/camara-retroceso.jpg'),
       alt: 'Cámaras de retroceso automotrices sobre mesa de trabajo',
     },
     specs: ['Cuadrada HD', 'Domo Toyota', 'Porta placas', 'Sistema 360'],
@@ -203,8 +204,8 @@ export const products: Product[] = [
     category: 'Personalización',
     description: 'Marco porta placa con diseño Toyota para dar un acabado más limpio al exterior.',
     image: {
-      webp: '/assets/products/porta-placa-toyota.webp',
-      fallback: '/assets/products/porta-placa-toyota.jpg',
+      webp: publicPath('assets/products/porta-placa-toyota.webp'),
+      fallback: publicPath('assets/products/porta-placa-toyota.jpg'),
       alt: 'Porta placa decorativo Toyota',
     },
     specs: ['Toyota', 'TRD', 'Chevrolet', 'JDM'],
@@ -215,8 +216,8 @@ export const products: Product[] = [
     category: 'Personalización',
     description: 'Versión decorativa TRD para dar una terminación más deportiva y limpia al frente o maletero.',
     image: {
-      webp: '/assets/products/porta-placa-trd.webp',
-      fallback: '/assets/products/porta-placa-trd.jpg',
+      webp: publicPath('assets/products/porta-placa-trd.webp'),
+      fallback: publicPath('assets/products/porta-placa-trd.jpg'),
       alt: 'Porta placa TRD decorativo para vehículo',
     },
     specs: ['TRD', 'Negro mate', 'Exterior', 'Fácil montaje'],
@@ -227,8 +228,8 @@ export const products: Product[] = [
     category: 'Personalización',
     description: 'Marco decorativo con identidad Chevrolet para mejorar la presencia visual del vehículo.',
     image: {
-      webp: '/assets/products/porta-placa-chevrolet.webp',
-      fallback: '/assets/products/porta-placa-chevrolet.jpg',
+      webp: publicPath('assets/products/porta-placa-chevrolet.webp'),
+      fallback: publicPath('assets/products/porta-placa-chevrolet.jpg'),
       alt: 'Porta placa Chevrolet decorativo',
     },
     specs: ['Chevrolet', 'Negro brillante', 'Exterior', 'Acabado limpio'],
@@ -239,8 +240,8 @@ export const products: Product[] = [
     category: 'Exterior deportivo',
     description: 'Aros decorativos y funcionales para dar una línea más agresiva al frente o la parte trasera.',
     image: {
-      webp: '/assets/products/aros-remolque.webp',
-      fallback: '/assets/products/aros-remolque.jpg',
+      webp: publicPath('assets/products/aros-remolque.webp'),
+      fallback: publicPath('assets/products/aros-remolque.jpg'),
       alt: 'Aros de remolque automotrices de colores',
     },
     specs: ['Rojo', 'Azul', 'JDM', 'Exterior'],
@@ -251,8 +252,8 @@ export const products: Product[] = [
     category: 'Accesorios exteriores',
     description: 'Kit para apertura asistida de maletero, pensado para mejorar comodidad y respuesta diaria.',
     image: {
-      webp: '/assets/products/resortes-maletero.webp',
-      fallback: '/assets/products/resortes-maletero.jpg',
+      webp: publicPath('assets/products/resortes-maletero.webp'),
+      fallback: publicPath('assets/products/resortes-maletero.jpg'),
       alt: 'Resortes para apertura asistida de maletero',
     },
     specs: ['Apertura asistida', 'Kit', 'Instalación rápida', 'Uso diario'],
@@ -266,8 +267,8 @@ export const featuredItems: FeaturedItem[] = [
     title: 'Kit Android con cámara y antenas',
     description: 'Paquete con pantalla, arnés RCA, antena GPS, antena WiFi y cámara para una instalación completa.',
     image: {
-      webp: '/assets/products/android-9-product-kit.webp',
-      fallback: '/assets/products/android-9-product-kit.jpg',
+      webp: publicPath('assets/products/android-9-product-kit.webp'),
+      fallback: publicPath('assets/products/android-9-product-kit.jpg'),
       alt: 'Kit de reproductor Android Super Smart con cables y cámara',
     },
   },
@@ -277,8 +278,8 @@ export const featuredItems: FeaturedItem[] = [
     title: 'Aletas de tiburón',
     description: 'Modelos grandes y pequeños en negro mate, negro brillante y fibra de carbono.',
     image: {
-      webp: '/assets/products/aleta-tiburon.webp',
-      fallback: '/assets/products/aleta-tiburon.jpg',
+      webp: publicPath('assets/products/aleta-tiburon.webp'),
+      fallback: publicPath('assets/products/aleta-tiburon.jpg'),
       alt: 'Aletas de tiburón automotrices de varios colores',
     },
   },
@@ -288,8 +289,8 @@ export const featuredItems: FeaturedItem[] = [
     title: 'Luces de parrilla tipo Toyota',
     description: 'Luces ámbar para parrilla con presencia deportiva y mejor visibilidad frontal.',
     image: {
-      webp: '/assets/products/luces-parrilla-toyota.webp',
-      fallback: '/assets/products/luces-parrilla-toyota.jpg',
+      webp: publicPath('assets/products/luces-parrilla-toyota.webp'),
+      fallback: publicPath('assets/products/luces-parrilla-toyota.jpg'),
       alt: 'Luces de parrilla ámbar instaladas en camioneta Toyota',
     },
   },
@@ -299,8 +300,8 @@ export const featuredItems: FeaturedItem[] = [
     title: 'Cámaras de retroceso',
     description: 'Opciones cuadradas, domo tipo Toyota, porta placas con cámara y sistemas 360 grados.',
     image: {
-      webp: '/assets/products/camara-retroceso.webp',
-      fallback: '/assets/products/camara-retroceso.jpg',
+      webp: publicPath('assets/products/camara-retroceso.webp'),
+      fallback: publicPath('assets/products/camara-retroceso.jpg'),
       alt: 'Cámaras de retroceso automotrices sobre mesa de trabajo',
     },
   },
@@ -310,8 +311,8 @@ export const featuredItems: FeaturedItem[] = [
     title: 'Porta placas decorativos',
     description: 'Modelos Toyota, TRD, Chevrolet, Nissan, Nismo, JDM, HKS y otros acabados.',
     image: {
-      webp: '/assets/products/porta-placa-toyota.webp',
-      fallback: '/assets/products/porta-placa-toyota.jpg',
+      webp: publicPath('assets/products/porta-placa-toyota.webp'),
+      fallback: publicPath('assets/products/porta-placa-toyota.jpg'),
       alt: 'Porta placa decorativo Toyota',
     },
   },
@@ -389,15 +390,15 @@ export const faqs: FAQItem[] = [
 export const catalogLinks = [
   {
     label: 'Catálogo de accesorios',
-    href: '/assets/catalogs/catalogo-super-smart.pdf',
+    href: publicPath('assets/catalogs/catalogo-super-smart.pdf'),
   },
   {
     label: 'Lista de reproductores',
-    href: '/assets/catalogs/lista-reproductores-super-smart.pdf',
+    href: publicPath('assets/catalogs/lista-reproductores-super-smart.pdf'),
   },
   {
     label: 'Lista de marcos',
-    href: '/assets/catalogs/lista-marcos-super-smart.pdf',
+    href: publicPath('assets/catalogs/lista-marcos-super-smart.pdf'),
   },
 ];
 

@@ -1,5 +1,6 @@
 import { Instagram, Mail, Phone } from 'lucide-react';
 import { catalogLinks } from '../data/catalogData';
+import { publicPath } from '../utils/publicPath';
 import { contact, createWhatsAppUrl } from '../utils/whatsapp';
 import {
   FooterBottom,
@@ -18,7 +19,13 @@ export const Footer = () => {
     <FooterWrapper>
       <FooterGrid>
         <FooterBrand>
-          <img src="/assets/brand/supersmart-logo.webp" alt="Super Smart" width="160" height="94" loading="lazy" />
+          <img
+            src={publicPath('assets/brand/supersmart-logo.webp')}
+            alt="Super Smart"
+            width="160"
+            height="94"
+            loading="lazy"
+          />
           <strong>{contact.company}</strong>
           <span>Catálogo automotriz</span>
         </FooterBrand>
@@ -54,8 +61,8 @@ export const Footer = () => {
 
         <FooterColumn>
           <h2>Legal</h2>
-          <FooterLink href="/legal/politicas-de-privacidad.html">Políticas de Privacidad</FooterLink>
-          <FooterLink href="/legal/terminos-y-condiciones.html">Términos y Condiciones</FooterLink>
+          <FooterLink href={publicPath('legal/politicas-de-privacidad.html')}>Políticas de Privacidad</FooterLink>
+          <FooterLink href={publicPath('legal/terminos-y-condiciones.html')}>Términos y Condiciones</FooterLink>
         </FooterColumn>
       </FooterGrid>
       <FooterBottom>

@@ -1,6 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { navigationItems } from '../data/catalogData';
+import { publicPath } from '../utils/publicPath';
 import { contact, createWhatsAppUrl } from '../utils/whatsapp';
 import {
   DesktopNav,
@@ -26,7 +27,7 @@ export const Header = () => {
       <NavContainer aria-label="Navegacion principal">
         <HeaderLogo href="#inicio" aria-label="Ir al inicio de Super Smart" onClick={closeMenu}>
           <img
-            src="/assets/brand/supersmart-logo.webp"
+            src={publicPath('assets/brand/supersmart-logo.webp')}
             alt="Super Smart"
             width="128"
             height="75"
